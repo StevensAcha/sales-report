@@ -24,4 +24,5 @@ export class ItemListComponent {
     this.date = new Date();
     this.simpleDate = this.datePipe.transform(this.date, 'short');
   }
+
 }

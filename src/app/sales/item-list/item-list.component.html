@@ -1,7 +1,7 @@
 <div>
   <h1>{{ title }}</h1>
   <h3>{{ simpleDate }}</h3>
-  <button (click) = "updateDate()"> Refresh Date</button>
+  <button (click) = "updateDate()"> Refresh Date </button>
   <div>
     <table>
       <thead>
@@ -21,7 +21,7 @@
           <td>{{ item.desc }}</td>
           <td>{{ item.price | currency: 'USD' }}</td>
           <td>{{ discount }}</td>
-          <td>{{ item.price - ((item.price * discount) / 100 ) | currency: 'USD' }}</td>
+          <td>{{ item.price - ((item.price * discount) / 100 ) | currency: 'BRL' }}</td>
         </tr>
       </tbody>
     </table>
